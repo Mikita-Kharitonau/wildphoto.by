@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta property="og:image" content="https://wildphoto.by/photos/og_image.jpg" />
+
+    <title>Wildphoto</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" href="galereya/css/jquery.galereya.css">
+    <link rel="stylesheet" href="css/wildphoto.css">
+    <script type="text/javascript" src="https://vk.com/js/api/share.js?95" charset="windows-1251"></script>
+
+    <style>
+        body {
+            font-family: 'Open Sans Condensed', sans-serif;
+            background: #f6f6f6;
+            color: #212121;
+        }
+
+        .galereya-top {
+            position: fixed;
+
+            background: #f6f6f6;
+            background: rgba(246, 246, 246, 0.7);
+        }
+
+        footer {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand">
+            <img src="img/wildphoto_logo.png" width="35" height="35" alt="">
+            Wildphoto
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Теги
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown"></div>
+                </li>
+            </ul>
+
+            <span class="navbar-text">
+                Прямиком с лугов Полесья
+                <script type="text/javascript">
+                    document.write(VK.Share.button(false, { type: "custom", text: "<img src=\"https://vk.com/images/share_32.png\" width=\"20\" height=\"20\" />" }));
+                </script>
+            </span>
+
+        </div>
+    </nav>
+
+    <div id="gallery"></div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
+    <script src="./galereya/js/jquery.galereya.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+
+    <script>
+        $(function () {
+            $('#gallery').galereya({
+                load: function (next) {
+                    $.getJSON('photos/images.json', function (data) {
+                        next(data);
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

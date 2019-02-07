@@ -1,0 +1,590 @@
+[
+    {
+        "lowsrc": "photos/thumbnails/Черный аист.jpg",
+        "fullsrc": "photos/Черный аист.jpg",
+        "description": "Пойма реки Днепр. Лето 2015",
+        "category": ["Лето", "Пейзаж"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/DSC_1522к.jpg",
+        "fullsrc": "photos/DSC_1522к.jpg",
+        "description": "Грация. Лето 2015",
+        "category": ["Лето", "Звери"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/палатка 261ц.jpg",
+        "fullsrc": "photos/палатка 261ц.jpg",
+        "description": "Республиканский ландшафтный заказник Выдрица. Лето 2015",
+        "category": ["Лето", "Птицы"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/DSC_0253.jpg",
+        "fullsrc": "photos/DSC_0253.jpg",
+        "description": "На фоне заходящего солнца. Лето 2015",
+        "category": ["Лето", "Макро"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/DSC_0099.jpg",
+        "fullsrc": "photos/DSC_0099.jpg",
+        "description": "Вот такой вот портрет. Лето 2015",
+        "category": ["Лето", "Звери"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/DSC_0835.jpg",
+        "fullsrc": "photos/DSC_0835.jpg",
+        "description": "Утро в июле 2015",
+        "category": ["Лето", "Макро"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/DSC_0525а1.jpg",
+        "fullsrc": "photos/DSC_0525а1.jpg",
+        "description": "Республиканский ландшафтный заказник Выдрица. Лето 2015",
+        "category": ["Лето", "Птицы"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/черный аист(2).jpg",
+        "fullsrc": "photos/черный аист(2).jpg",
+        "description": "Впервые удалось подползти поближе к этому красавцу из Красной Книги. Река Днепр. Лето 2015",
+        "category": ["Лето", "Птицы"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/косуля2.jpg",
+        "fullsrc": "photos/косуля2.jpg",
+        "description": "Республиканский ландшафтный заказник Выдрица. Июнь 2016",
+        "category": ["Лето", "Звери"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/DSC_1586л.jpg",
+        "fullsrc": "photos/DSC_1586л.jpg",
+        "description": "В конце жаркого дня лоси нередко забираются по шею в озеро или тихую реку, где спасаются от насекомых и поедают сочную водную растительность. Лето 2015",
+        "category": ["Лето", "Звери"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/косуля1.jpg",
+        "fullsrc": "photos/косуля1.jpg",
+        "description": "Республиканский ландшафтный заказник Выдрица. Июнь 2016",
+        "category": ["Лето", "Звери"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/палатка 044.jpg",
+        "fullsrc": "photos/палатка 044.jpg",
+        "description": "Рисунок маслом. Таир-3С. Лето 2015",
+        "category": ["Лето", "Пейзаж", "Птицы"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/вир-17.jpg",
+        "fullsrc": "photos/вир-17.jpg",
+        "description": "Туманное утро на лугу. Август 2017",
+        "category": ["Лето", "Пейзаж", "Птицы"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/лось-1.jpg",
+        "fullsrc": "photos/лось-1.jpg",
+        "description": "Заливные луга в пойме Днепра, в мае все страдают от обилия насекомых, 2017",
+        "category": ["Лето", "Звери"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/DSC_0864.jpg",
+        "fullsrc": "photos/DSC_0864.jpg",
+        "description": "Утро в июле 2015",
+        "category": ["Лето", "Макро"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/портрет1.jpg",
+        "fullsrc": "photos/портрет1.jpg",
+        "description": "Портрет. Май 2016",
+        "category": ["Лето", "Звери"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/DSC_1540л.jpg",
+        "fullsrc": "photos/DSC_1540л.jpg",
+        "description": "Первая встреча. Лето 2015",
+        "category": ["Лето", "Звери"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/DSC_1631 .jpg",
+        "fullsrc": "photos/DSC_1631 .jpg",
+        "description": "Освещаемый лучами восходящего солнца. Лето 2015",
+        "category": ["Лето", "Звери"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/DSC_0025.jpg",
+        "fullsrc": "photos/DSC_0025.JPG",
+        "description": "Начало рыбалки. Лето 2015",
+        "category": ["Лето", "Другая сторона"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/лось2-1.jpg",
+        "fullsrc": "photos/лось2-1.jpg",
+        "description": "Портрет на закате. Май 2017",
+        "category": ["Лето", "Звери"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/lis_1_iz_1.jpg",
+        "fullsrc": "photos/lis_1_iz_1.jpg",
+        "description": "Лисёнок. Лето 2016",
+        "category": ["Лето", "Звери"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/рассвет1.jpg",
+        "fullsrc": "photos/рассвет1.jpg",
+        "description": "Рассвет в Сельном. Лето 2016",
+        "category": ["Лето", "Пейзаж"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/Косуленок.jpg",
+        "fullsrc": "photos/Косуленок.jpg",
+        "description": "Косулёнок. Лето 2018",
+        "category": ["Лето", "Звери"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/DSC_0799.jpg",
+        "fullsrc": "photos/DSC_0799.jpg",
+        "description": "Утро в июле 2015",
+        "category": ["Лето", "Макро"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/лось (1 из 1).jpg",
+        "fullsrc": "photos/лось (1 из 1).jpg",
+        "description": "В конце жаркого дня лоси нередко забираются по шею в озеро или тихую реку, где спасаются от насекомых и поедают сочную водную растительность. Лето 2017",
+        "category": ["Лето", "Звери"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/DSC_0779.jpg",
+        "fullsrc": "photos/DSC_0779.jpg",
+        "description": "Утро в пойме Березины. Июль 2015",
+        "category": ["Лето", "Пейзаж"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/туман-1.jpg",
+        "fullsrc": "photos/туман-1.jpg",
+        "description": "В этом месте та самая река Выдрица впадает в старицу Березины. Лето 2017",
+        "category": ["Лето", "Пейзаж"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/вир-20.jpg",
+        "fullsrc": "photos/вир-20.jpg",
+        "description": "Рассвет на лугу. Лето 2017",
+        "category": ["Лето", "Макро", "Пейзаж"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/косуля туман.jpg",
+        "fullsrc": "photos/косуля туман.jpg",
+        "description": "Косуля. Лето 2015",
+        "category": ["Лето", "Звери"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/DSC_4043b.jpg",
+        "fullsrc": "photos/DSC_4043b.jpg",
+        "description": "Светлогорский лес. Весна 2016",
+        "category": ["Лето", "Звери"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/косули 22.04-1.jpg",
+        "fullsrc": "photos/косули 22.04-1.jpg",
+        "description": "Купаясь в лучах. Весна 2017",
+        "category": ["Лето", "Звери"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/DSC_3775.jpg",
+        "fullsrc": "photos/DSC_3775.JPG",
+        "description": "Утро на лугу. Весна 2016",
+        "category": ["Лето", "Звери", "Пейзаж"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/Черный аист(1).jpg",
+        "fullsrc": "photos/Черный аист(1).jpg",
+        "description": "Черный аист. Лето 2017",
+        "category": ["Лето", "Птицы", "Пейзаж"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/вир-9.jpg",
+        "fullsrc": "photos/вир-9.jpg",
+        "description": "Лето 2017",
+        "category": ["Лето"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/животные 289_cr1.jpg",
+        "fullsrc": "photos/животные 289_cr1.jpg",
+        "description": "В Беларуси прыткая ящерица достаточно равномерно встречается на всей территории. Лето 2015",
+        "category": ["Лето", "Звери"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/DSC_0307.jpg",
+        "fullsrc": "photos/DSC_0307.JPG",
+        "description": "Республиканский ландшафтный заказник Выдрица. Февраль 2018",
+        "category": ["Зима", "Пейзаж"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/DSC_1421.jpg",
+        "fullsrc": "photos/DSC_1421.jpg",
+        "description": "За днепром жизнь другая. Лето 2015",
+        "category": ["Лето", "Звери"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/DSC_0026ц.jpg",
+        "fullsrc": "photos/DSC_0026ц.jpg",
+        "description": "Серая цапля. Лето 2015",
+        "category": ["Лето", "Птицы"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/паутина.jpg",
+        "fullsrc": "photos/паутина.jpg",
+        "description": "А если посмотреть поближе? Весна 2016",
+        "category": ["Лето", "Макро"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/выдрица.jpg",
+        "fullsrc": "photos/выдрица.jpg",
+        "description": "Республиканский ландшафтный заказник Выдрица. Февраль 2018",
+        "category": ["Зима", "Звери"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/карьер 120.jpg",
+        "fullsrc": "photos/карьер 120.jpg",
+        "description": "Стая чаек отбивает атаку хищника. Светлогорский район. Лето 2015",
+        "category": ["Лето", "Птицы"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/DSC_4036.jpg",
+        "fullsrc": "photos/DSC_4036.JPG",
+        "description": "Туман настолько густой, что на солнце можно смотреть невооруженным глазом. Весна 2016",
+        "category": ["Лето", "Пейзаж"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/вир-14.jpg",
+        "fullsrc": "photos/вир-14.jpg",
+        "description": "Утро на лугу. Лето 2017",
+        "category": ["Лето", "Пейзаж"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/Туман за озером.jpg",
+        "fullsrc": "photos/Туман за озером.jpg",
+        "description": "После заката солнца. Многие из представленных сников сделаны далеко, за тем туманом... Лето 2018",
+        "category": ["Лето", "Пейзаж"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/DSC_0024.jpg",
+        "fullsrc": "photos/DSC_0024.JPG",
+        "description": "Фотоохота подходит к концу. Лето 2015",
+        "category": ["Лето", "Пейзаж"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/DSC_0026.jpg",
+        "fullsrc": "photos/DSC_0026.JPG",
+        "description": "Рыбалка начинается задолго до восхода солнца. Лето 2015",
+        "category": ["Лето", "Пейзаж", "Другая сторона"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/DSC_0337.jpg",
+        "fullsrc": "photos/DSC_0337.JPG",
+        "description": "Триколор",
+        "category": ["Лето", "Пейзаж", "Небо"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/пейзаж-1.jpg",
+        "fullsrc": "photos/пейзаж-1.jpg",
+        "description": "Республиканский ландшафтный заказник Выдрица. Лето 2017",
+        "category": ["Лето", "Пейзаж", "Небо"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/DSC_4031.jpg",
+        "fullsrc": "photos/DSC_4031.JPG",
+        "description": "Тишина... Весна 2016",
+        "category": ["Лето", "Пейзаж"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/рыбалка Стрешин-1.jpg",
+        "fullsrc": "photos/рыбалка Стрешин-1.jpg",
+        "description": "Рыбак. Лето 2018",
+        "category": ["Лето", "Пейзаж"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/луна-88.jpg",
+        "fullsrc": "photos/луна-88.jpg",
+        "description": "Тихий вечер. Лето 2017",
+        "category": ["Лето", "Пейзаж", "Небо"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/Сплав18-10.jpg",
+        "fullsrc": "photos/Сплав18-10.jpg",
+        "description": "Благодать. Лето 2018",
+        "category": ["Лето", "Пейзаж"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/вир-18.jpg",
+        "fullsrc": "photos/вир-18.jpg",
+        "description": "Лето 2017",
+        "category": ["Лето", "Другая сторона"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/DSC_0285.jpg",
+        "fullsrc": "photos/DSC_0285.JPG",
+        "description": "Приближается зима. Зима 2018",
+        "category": ["Зима", "Макро", "Пейзаж"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/Глушец-1.jpg",
+        "fullsrc": "photos/Глушец-1.jpg",
+        "description": "Картина облаками",
+        "category": ["Лето", "Пейзаж", "Небо"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/молния-2.jpg",
+        "fullsrc": "photos/молния-2.jpg",
+        "description": "Гроза в Республиканский ландшафтном заказнике Выдрица. Лето 2017",
+        "category": ["Лето", "Пейзаж", "Небо"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/ночь-1.jpg",
+        "fullsrc": "photos/ночь-1.jpg",
+        "description": "Млечный путь. Лето 2017",
+        "category": ["Лето", "Пейзаж", "Небо"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/Браславы-7.jpg",
+        "fullsrc": "photos/Браславы-7.jpg",
+        "description": "Привал. Лето 2018",
+        "category": ["Другая сторона", "Небо", "Лето"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/луна-1.jpg",
+        "fullsrc": "photos/луна-1.jpg",
+        "description": "Восход луны. Весна 2017",
+        "category": ["Лето", "Небо", "Пейзаж"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/DSC_0022.jpg",
+        "fullsrc": "photos/DSC_0022.JPG",
+        "description": "А туман на луга ложится",
+        "category": ["Лето", "Пейзаж"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/Браславы-1.jpg",
+        "fullsrc": "photos/Браславы-1.jpg",
+        "description": "На велосипедах до Браславских озёр. Лето 2018",
+        "category": ["Лето", "Другая сторона"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/IMG_20170628_122356_497.jpg",
+        "fullsrc": "photos/IMG_20170628_122356_497.jpg",
+        "description": "Главное в астрофото – перебороть страх и добраться до места съемки",
+        "category": ["Лето", "Небо", "Пейзаж"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/DSC_0474.jpg",
+        "fullsrc": "photos/DSC_0474.jpg",
+        "description": "Искры. Деревня Сельное, Лето 2015",
+        "category": ["Лето", "Другая сторона"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/на берегу.jpg",
+        "fullsrc": "photos/на берегу.jpg",
+        "description": "На берегу. Весна 2016",
+        "category": ["Лето", "Пейзаж"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/Сплав18-12.jpg",
+        "fullsrc": "photos/Сплав18-12.jpg",
+        "description": "Сплав по Березине. Лето 2018",
+        "category": ["Лето", "Другая сторона", "Небо"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/пейзаж.jpg",
+        "fullsrc": "photos/пейзаж.jpg",
+        "description": "Путешествуем по Республиканскому ландшафтному заказнику Выдрица. Лето 2017",
+        "category": ["Лето", "Другая сторона", "Небо"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/Браславы-11.jpg",
+        "fullsrc": "photos/Браславы-11.jpg",
+        "description": "Проехать пол страны на велосипеде и покупаться в озере с кристально чистой водой",
+        "category": ["Лето", "Другая сторона", "Небо"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/DSC_0756л.jpg",
+        "fullsrc": "photos/DSC_0756л.jpg",
+        "description": "Полнолуние. Лето 2015",
+        "category": ["Лето", "Небо"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/hEiv5kGr5yE.jpg",
+        "fullsrc": "photos/hEiv5kGr5yE.jpg",
+        "description": "Путешествуем по Республиканскому ландшафтному заказнику Выдрица. Лето 2016",
+        "category": ["Лето", "Другая сторона"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/Сельное-1-1.jpg",
+        "fullsrc": "photos/Сельное-1-1.jpg",
+        "description": "Богдан Ставпинский на съемках. Лето 2017",
+        "category": ["Лето", "Другая сторона"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/Сельное 1-1.jpg",
+        "fullsrc": "photos/Сельное 1-1.jpg",
+        "description": "Осень 2017",
+        "category": ["Лето", "Макро"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/звезды-1.jpg",
+        "fullsrc": "photos/звезды-1.jpg",
+        "description": "Персеиды в августе 2017",
+        "category": ["Лето", "Небо", "Пейзаж"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/IMG_20160814_141410.jpg",
+        "fullsrc": "photos/IMG_20160814_141410.jpg",
+        "description": "Лето 2016",
+        "category": ["Лето", "Небо", "Пейзаж"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/Ёлка.jpg",
+        "fullsrc": "photos/Ёлка.jpg",
+        "description": "Вокруг полярной. Лето 2017",
+        "category": ["Лето", "Небо", "Пейзаж"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/звезды-35.jpg",
+        "fullsrc": "photos/звезды-35.jpg",
+        "description": "Республиканский ландшафтный заказник Выдрица. Берег озера Белогорское. Лето 2017",
+        "category": ["Лето", "Небо", "Пейзаж"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/кут-179.jpg",
+        "fullsrc": "photos/кут-179.jpg",
+        "description": "Полнолуние в пойме Днепра. Лето 2017",
+        "category": ["Лето", "Пейзаж"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/под луной.jpg",
+        "fullsrc": "photos/под луной.jpg",
+        "description": "Под луной. Весна 2018",
+        "category": ["Лето", "Пейзаж", "Другая сторона"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/лошадиный остров-38.jpg",
+        "fullsrc": "photos/лошадиный остров-38.jpg",
+        "description": "Лошадиный остров. Лето 2017",
+        "category": ["Лето", "Небо", "Пейзаж"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/вир-12.jpg",
+        "fullsrc": "photos/вир-12.jpg",
+        "description": "С другой стороны объектива. Лето 2017",
+        "category": ["Лето", "Другая сторона"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/DSC_0475.jpg",
+        "fullsrc": "photos/DSC_0475.jpg",
+        "description": "Фотоохотники на отдыхе. Лето 2015",
+        "category": ["Лето", "Другая сторона"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/луна-24.jpg",
+        "fullsrc": "photos/луна-24.jpg",
+        "description": "Весна 2017",
+        "category": ["Лето", "Небо"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/лошадиный остров-49.jpg",
+        "fullsrc": "photos/лошадиный остров-49.jpg",
+        "description": "Под светом луны. Лето 2017",
+        "category": ["Лето", "Небо", "Пейзаж"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/вир-2.jpg",
+        "fullsrc": "photos/вир-2.jpg",
+        "description": "Фотоохотники на отдыхе. Лето 2017",
+        "category": ["Лето", "Другая сторона"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/DSC_0317.jpg",
+        "fullsrc": "photos/DSC_0317.JPG",
+        "description": "В процессе. Лето 2017",
+        "category": ["Лето", "Другая сторона"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/foto_13_iz_21_nb.jpg",
+        "fullsrc": "photos/foto_13_iz_21_nb.jpg",
+        "description": "Республиканский ландшафтный заказник Выдрица. Лето 2016",
+        "category": ["Лето", "Небо", "Пейзаж"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/DfM_0Tn2FuY.jpg",
+        "fullsrc": "photos/DfM_0Tn2FuY.jpg",
+        "description": "В процессе. Лето 2017",
+        "category": ["Лето", "Другая сторона"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/Маентак-4.jpg",
+        "fullsrc": "photos/Маентак-4.jpg",
+        "description": "Это любовь. Лето 2018",
+        "category": ["Лето", "Другая сторона"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/Сельное-1.jpg",
+        "fullsrc": "photos/Сельное-1.jpg",
+        "description": "Деревня Сельное. Зима 2019",
+        "category": ["Зима", "Небо", "Пейзаж"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/звезды-2.jpg",
+        "fullsrc": "photos/звезды-2.jpg",
+        "description": "Зима 2018",
+        "category": ["Зима", "Другая сторона", "Небо"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/Сплав18-15.jpg",
+        "fullsrc": "photos/Сплав18-15.jpg",
+        "description": "Сплав по Березине. Лето 2018",
+        "category": ["Лето", "Небо", "Пейзаж", "Другая сторона"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/фотоохота4-3.jpg",
+        "fullsrc": "photos/фотоохота4-3.jpg",
+        "description": "Под цвет фона. Весна 2017",
+        "category": ["Лето", "Звери"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/y4wSPan7lyo.jpg",
+        "fullsrc": "photos/y4wSPan7lyo.jpg",
+        "description": "В поцессе. Лето 2017",
+        "category": ["Лето", "Другая сторона"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/Браславы-6.jpg",
+        "fullsrc": "photos/Браславы-6.jpg",
+        "description": "Привал на Браславских озерах. Лето 2018",
+        "category": ["Лето", "Небо", "Пейзаж", "Другая сторона"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/млечный путь-1.jpg",
+        "fullsrc": "photos/млечный путь-1.jpg",
+        "description": "Млечный путь. Лето 2017",
+        "category": ["Лето", "Небо"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/treki-1.jpg",
+        "fullsrc": "photos/treki-1.jpg",
+        "description": "Звездные треки. Лето 2016",
+        "category": ["Лето", "Небо"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/oD5PgaBwXfg.jpg",
+        "fullsrc": "photos/oD5PgaBwXfg.jpg",
+        "description": "Вова Фицнер в процессе съемки. Зима 2018",
+        "category": ["Зима", "Другая сторона"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/вир-10.jpg",
+        "fullsrc": "photos/вир-10.jpg",
+        "description": "Вова Фицнер в процессе съемки. Лето 2017",
+        "category": ["Лето", "Другая сторона"]
+    },
+    {
+        "lowsrc": "photos/thumbnails/небо во дворе-113.jpg",
+        "fullsrc": "photos/небо во дворе-113.jpg",
+        "description": "Весна 2017",
+        "category": ["Лето", "Небо"]
+    }
+]
