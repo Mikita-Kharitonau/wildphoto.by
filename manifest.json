@@ -1,0 +1,7 @@
+{
+  "name": "wildphoto",
+  "short_name": "wildphoto",
+  "description": "wildphoto.by - Прямиком с лугов Полесья",
+  "start_url": "/",
+  "display": "standalone"
+}

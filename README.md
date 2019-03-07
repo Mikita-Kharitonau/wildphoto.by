@@ -1,6 +1,6 @@
 # wildphoto.by
 
-http://wildphoto.by/
+http://wildphoto.by/ - Прямиком с лугов Полесья
 
 Планируется развить проект и добавить:
 

@@ -1,8 +1,8 @@
-function classToggle() {
-    const navs = document.querySelectorAll('.navbar__items')
+// function classToggle() {
+//     const navs = document.querySelectorAll('.navbar__items')
 
-    navs.forEach(nav => nav.classList.toggle('navbar__toggleShow'));
-}
+//     navs.forEach(nav => nav.classList.toggle('navbar__toggleShow'));
+// }
 
-document.querySelector('.navbar__toggle')
-    .addEventListener('click', classToggle);
+// document.querySelector('.navbar__toggle')
+//     .addEventListener('click', classToggle);
