@@ -30,7 +30,11 @@ export default class Header extends Component {
         <nav className="navbar__items">
           <ul className="navbar__items_links">
             {this.props.navbarItems.map((value, index) => {
-              return <HeaderDropdown headerText={value.headerText} menuItems={value.menuItems} />
+              return <HeaderDropdown 
+                        key={index}
+                        headerText={value.headerText} 
+                        menuItems={value.menuItems} 
+                      />
             })}
           </ul>
         </nav>

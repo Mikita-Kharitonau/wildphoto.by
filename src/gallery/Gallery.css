@@ -1,0 +1,29 @@
+.reactModal__content {
+  width: 50%;
+  padding: 0 5px;
+  background-color: white;
+  box-shadow: 4px 4px 7px 0px rgba(0, 0, 0, 0.4);
+  border-radius: 3px;
+}
+
+.reactModal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.322);
+}
+
+.reactModal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reactModal__header p {
+  margin: 10px;
+}

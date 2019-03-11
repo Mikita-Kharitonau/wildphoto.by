@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Header from '../header/Header.js';
-import Grid from '../grid/Grid.js';
+import Gallery from '../gallery/Gallery.js';
 
 class App extends Component {
 
@@ -74,132 +74,13 @@ class App extends Component {
         }
       ]
     }
-
-    this.gridSource = [
-        [
-          {
-            title: "Черный аист",
-            src: "photos/thumbnails/Черный аист.jpg",
-            author: "Nikita Kharitonov",
-            rating: 3.4,
-            commentsCount: 2,
-            likesCountCount: 80,
-            id: 3
-          },
-          {
-            title: "Черный аист",
-            src: "photos/thumbnails/DSC_0099.jpg",
-            author: "Nikita Kharitonov",
-            rating: 3.4,
-            commentsCount: 2,
-            likesCount: 80,
-            id: 3
-          },
-          {
-            title: "Черный аист",
-            src: "photos/thumbnails/косуля2.jpg",
-            author: "Nikita Kharitonov",
-            rating: 3.4,
-            commentsCount: 2,
-            likesCount: 80,
-            id: 3
-          }
-      ],
-      [
-        {
-          title: "Черный аист",
-          src: "photos/thumbnails/DSC_1522к.jpg",
-          author: "Nikita Kharitonov",
-          rating: 3.4,
-          commentsCount: 2,
-          likesCount: 80,
-          id: 3
-        },
-        {
-          title: "Черный аист",
-          src: "photos/thumbnails/DSC_0835.jpg",
-          author: "Nikita Kharitonov",
-          rating: 3.4,
-          commentsCount: 2,
-          likesCount: 80,
-          id: 3
-        },
-        {
-          title: "Черный аист",
-          src: "photos/thumbnails/DSC_1586л.jpg",
-          author: "Nikita Kharitonov",
-          rating: 3.4,
-          commentsCount: 2,
-          likesCount: 80,
-          id: 3
-        }
-      ],
-      [
-        {
-          title: "Черный аист",
-          src: "photos/thumbnails/палатка 261ц.jpg",
-          author: "Nikita Kharitonov",
-          rating: 3.4,
-          commentsCount: 2,
-          likesCount: 80,
-          id: 3
-        },
-        {
-          title: "Черный аист",
-          src: "photos/thumbnails/DSC_0525а1.jpg",
-          author: "Nikita Kharitonov",
-          rating: 3.4,
-          commentsCount: 2,
-          likesCount: 80,
-          id: 3
-        },
-        {
-          title: "Черный аист",
-          src: "photos/thumbnails/косуля1.jpg",
-          author: "Nikita Kharitonov",
-          rating: 3.4,
-          commentsCount: 2,
-          likesCount: 80,
-          id: 3
-        }
-      ],
-      [
-        {
-          title: "Черный аист",
-          src: "photos/thumbnails/DSC_0253.jpg",
-          author: "Nikita Kharitonov",
-          rating: 3.4,
-          commentsCount: 2,
-          likesCount: 80,
-          id: 3
-        },
-        {
-          title: "Черный аист",
-          src: "photos/thumbnails/черный аист(2).jpg",
-          author: "Nikita Kharitonov",
-          rating: 3.4,
-          commentsCount: 2,
-          likesCount: 80,
-          id: 3
-        },
-        {
-          title: "Черный аист",
-          src: "photos/thumbnails/палатка 044.jpg",
-          author: "Nikita Kharitonov",
-          rating: 3.4,
-          commentsCount: 2,
-          likesCount: 80,
-          id: 3
-        }
-      ]
-    ]
   }
 
   render() {
     return (
       <div className="App">
         <Header navbarItems={this.headerData.navbarItems}></Header>
-        <Grid source={this.gridSource}/>
+        <Gallery />
       </div>
     );
   }

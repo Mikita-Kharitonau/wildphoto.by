@@ -12,8 +12,12 @@ export default class HeaderDropdown extends Component {
         </div>
         <ul className="dropdown__menu">
           {
-            this.props.menuItems.map((value) => {
-              return <li className="dropdown__menu_item"><a href={value.href}>{value.text}</a></li>
+            this.props.menuItems.map((value, index) => {
+              return (
+                <li key={index} className="dropdown__menu_item">
+                  <a href={value.href}>{value.text}</a>
+                </li>
+              )
             })
           }
         </ul >

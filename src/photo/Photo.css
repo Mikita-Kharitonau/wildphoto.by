@@ -1,0 +1,19 @@
+.photo__img {
+    width: 100%;
+}
+
+.photo__actions {
+    display: flex;
+}
+
+.photo__action {
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+}
+
+.photo__action_icon {
+    margin-right: 5px;
+    font-size: 1.5rem;
+    color: crimson;
+}

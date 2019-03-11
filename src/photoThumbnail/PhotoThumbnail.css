@@ -13,7 +13,7 @@
   background-color: #00000070;
 }
 
-.photoThumbnail a:hover .overlay {
+.photoThumbnail:hover .overlay {
   display: block;
 }
 
