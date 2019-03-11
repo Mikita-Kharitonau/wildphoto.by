@@ -1,0 +1,58 @@
+.photoThumbnail {
+  position: relative;
+  margin-top: 12px;
+  box-shadow: 4px 4px 7px 0px rgba(0, 0, 0, 0.4);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: #00000070;
+}
+
+.photoThumbnail a:hover .overlay {
+  display: block;
+}
+
+.overlay__author {
+  margin: 0;
+  padding: 3px 0 0 3px;
+  color: white;
+}
+
+.overlay__metrics {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.overlay__metric {
+  display: flex;
+  align-items: center;
+  margin: 0 5px;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.overlay__metrics_icon {
+  margin-right: 5px;
+  font-size: 1.2rem;
+}
+
+.overlay__title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.photoThumbnail__img {
+  width: 100%;
+  display: block;
+}
