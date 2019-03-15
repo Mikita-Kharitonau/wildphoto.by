@@ -5,6 +5,7 @@
   "dependencies": {
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
+    "react-epic-spinners": "^0.3.0",
     "react-icons": "^3.5.0",
     "react-modal": "^3.8.1",
     "react-scripts": "2.1.8"

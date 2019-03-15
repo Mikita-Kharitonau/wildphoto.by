@@ -34,10 +34,6 @@
   cursor: pointer;
 }
 
-.dropdown:hover .dropdown__header_text {
-  font-size: 1.1rem;
-}
-
 .dropdown:hover>.dropdown__menu {
   display: block;
 }

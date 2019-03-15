@@ -1,0 +1,56 @@
+.comment {
+  display: grid;
+  grid-template-columns: 40px auto;
+  grid-template-rows: 20px auto 20px;
+  grid-template-areas: 
+    "avatar author"
+    "avatar text"
+    "avatar date";
+  margin-bottom: 10px;
+}
+
+.comment__avatar {
+  grid-area: avatar;
+  align-self: center;
+}
+
+.comment__avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.comment__author {
+  grid-area: author;
+}
+
+.comment__author a {
+  color: #000;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.comment__text {
+  grid-area: text;
+}
+
+.comment__text p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.comment__date {
+  grid-area: date;
+}
+
+.comment__author, .comment__text, .comment__date {
+  padding-left: 5px;
+}
+
+.comment__date p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: gray;
+}
+

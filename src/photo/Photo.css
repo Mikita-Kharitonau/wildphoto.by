@@ -1,19 +1,124 @@
-.photo__img {
-    width: 100%;
+ .spinnerArea {
+   widows: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ @media only screen and (min-width: 800px) {
+   .photo {
+     height: 100%;
+     display: grid;
+     grid-template-columns: 65% 35%;
+     grid-template-rows: 10% 70% 10% 10%;
+     grid-template-areas: "image header" "image comments" "image actions" "image addComment"
+   }
+ }
+
+ .photo__header {
+   grid-area: header;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 5px;
+   border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+ }
+
+ .photo__header p {
+   font-weight: 400;
+   margin: 0;
+ }
+
+ .imageWrapper {
+   grid-area: image;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #000;
+ }
+
+ .comments {
+   grid-area: comments;
+   padding: 5px 5px;
+   overflow-y: scroll;
+   scrollbar-width: 0;
+   border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+ }
+
+ .comments::-webkit-scrollbar {
+   width: 0;
+ }
+
+ .actions {
+   grid-area: actions;
+   display: flex;
+   align-items: center;
+   padding: 0 5px;
+   border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+ }
+
+ .addComment {
+   grid-area: addComment;
+   padding-left: 5px;
+   display: grid;
+   grid-template-columns: auto 40px;
+ }
+
+ .addComment__input {
+   grid-area: 1 / 1 / 2 / 2;
+ }
+
+ .addComment__input input {
+   width: 100%;
+   height: 100%;
+   border: 0;
+   padding: 0;
+ }
+
+ .addComment__input input::placeholder {
+   font-family: 'Open Sans';
+ }
+
+ .addComment__submit {
+   grid-area: 1 / 2 / 2 / 3;
+ }
+
+ .addComment__submit button {
+   height: 100%;
+   width: 100%;
+   border: 0;
+   padding: 0;
+ }
+
+ .addComment__submit button:hover {
+  background-color: #dadada;
 }
 
-.photo__actions {
-    display: flex;
-}
+ .pleaseLogin {
+   grid-area: 3 / 2 / 5 / 3;
+   display: none;
+   justify-content: center;
+   align-items: center;
+   padding: 10px;
+ }
 
-.photo__action {
-    display: flex;
-    align-items: center;
-    margin: 0 5px;
-}
+ .photo__img {
+   max-width: 100%;
+   max-height: 100%;
+ }
 
-.photo__action_icon {
-    margin-right: 5px;
-    font-size: 1.5rem;
-    color: crimson;
-}
+ .action {
+   display: flex;
+   align-items: center;
+   margin-right: 10px;
+ }
+
+ .action__icon {
+   font-size: 1.2rem;
+   margin-right: 5px;
+ }
+
+ .actions__icon_crimson {
+   color: crimson;
+ }
