@@ -1,5 +1,5 @@
- .spinnerArea {
-   widows: 100%;
+ .photo__spinnerArea {
+   width: 100%;
    height: 100%;
    display: flex;
    justify-content: center;
@@ -30,6 +30,11 @@
    margin: 0;
  }
 
+ .photo__header_date {
+   color: gray;
+   font-size: 0.7rem;
+ }
+
  .imageWrapper {
    grid-area: image;
    display: flex;
@@ -48,6 +53,12 @@
 
  .comments::-webkit-scrollbar {
    width: 0;
+ }
+
+ .comments .comments__emptyCaption {
+   color: gray;
+   font-size: 0.9rem;
+   text-align: center;
  }
 
  .actions {
@@ -100,7 +111,13 @@
    display: none;
    justify-content: center;
    align-items: center;
-   padding: 10px;
+   padding: 5px;
+ }
+
+ .pleaseLogin p {
+   margin: 0;
+   font-size: 0.9rem;
+   text-align: center;
  }
 
  .photo__img {

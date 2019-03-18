@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import './Photo.css';
 import { FaRegHeart, FaHeart, FaTimes, FaThumbsDown, FaRegThumbsDown, FaPlus } from 'react-icons/fa';
-import { SelfBuildingSquareSpinner } from 'react-epic-spinners';
+import { SelfBuildingSquareSpinner, FulfillingSquareSpinner } from 'react-epic-spinners';
 import Comment from '../comment/Comment.js';
+import convertDateTime from '../utils';
 
 export default class Photo extends Component {
 
@@ -54,15 +55,31 @@ export default class Photo extends Component {
     return <FaRegHeart className="action__icon" onClick={this.likeClick} />
   }
 
+  renderComments(comments) {
+    return comments.map((comment) => {
+      return <Comment
+        author={comment.author}
+        text={comment.text}
+        date={comment.date} />
+    })
+  }
+
+  renderEmptyComments() {
+    return (
+      <p className="comments__emptyCaption">Ваш комментарий будет первым</p>
+    )
+  }
+
   render() {
 
     var like = this.state.isLiked ? this.renderHeart() : this.renderRegHeart();
     var dislike = this.state.isDisliked ? this.renderThumbsDown() : this.renderRegThumbsDown();
+    var comments = this.props.comments.length ? this.renderComments(this.props.comments) : this.renderEmptyComments();
 
     if (this.props.isLoading) {
       return (
-        <div className="spinnerArea">
-          <SelfBuildingSquareSpinner
+        <div className="photo__spinnerArea">
+          <FulfillingSquareSpinner
             size={30}
             color="#808080"
             animationDuration={2000} />
@@ -75,7 +92,10 @@ export default class Photo extends Component {
         <div className="photo__header">
           <div>
             <p>
-              {this.props.title}
+              {this.props.title + " "}
+              <span className="photo__header_date">
+                {convertDateTime(this.props.date)}
+              </span>
             </p>
           </div>
           <div>
@@ -86,12 +106,7 @@ export default class Photo extends Component {
           <img className="photo__img" src={this.props.src} />
         </div>
         <div className="comments">
-          {this.props.comments.map((comment) => {
-            return <Comment
-              author={comment.author}
-              text={comment.text}
-              date={comment.date} />
-          })}
+          {comments}
         </div>
         <div className="pleaseLogin">
           <p>Для того, чтобы комментировать и выполнять другие действия войдите или зарегистрируйтесь</p>
@@ -99,11 +114,11 @@ export default class Photo extends Component {
         <div className="actions">
           <div className="action">
             {like}
-            <span>{this.props.likesCount}</span>
+            <span>{this.props.likes.length}</span>
           </div>
           <div className="action">
             {dislike}
-            <span>{this.props.dislikesCount}</span>
+            <span>{this.props.dislikes.length}</span>
           </div>
         </div>
         <div className="addComment">

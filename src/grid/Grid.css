@@ -1,4 +1,4 @@
-.row .column {
+/* .row .column {
   box-sizing: border-box;
 }
 
@@ -32,4 +32,22 @@
     flex: 100%;
     max-width: 100%;
   }
+}
+*/
+
+.grid__spinnerArea {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: 300px;
 }

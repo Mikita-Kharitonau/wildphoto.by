@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Grid.css';
 import PhotoThumbnail from '../photoThumbnail/PhotoThumbnail.js';
+import { SelfBuildingSquareSpinner } from 'react-epic-spinners';
 
 export default class Grid extends Component {
 
@@ -14,22 +15,28 @@ export default class Grid extends Component {
   }
 
   render() {
+
+    if (this.props.isLoading) {
+      return (
+        <div className="grid__spinnerArea">
+          <SelfBuildingSquareSpinner
+            size={30}
+            color="#808080"
+            animationDuration={2000} />
+        </div>
+      )
+    }
+
     return (
-      <div className="row">
+      <div className="grid">
         {
-          this.props.source.map((columnData, index) => {
-            const column = columnData.map((item) => {
-              return (
-                <PhotoThumbnail 
+          this.props.source.map((item) => {
+            return (
+              <div className="grid__item">
+                <PhotoThumbnail
                   key={item.id}
                   data={item}
-                  onClick={this.handleItemClick}
-                />
-              )
-            })
-            return (
-              <div key={index} className="column">
-                {column}
+                  onClick={this.handleItemClick} />
               </div>
             )
           })

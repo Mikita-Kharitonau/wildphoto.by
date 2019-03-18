@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './Comment.css'
+import convertDateTime from '../utils';
 
 export default class Comment extends Component {
   render() {
@@ -18,7 +19,7 @@ export default class Comment extends Component {
         </div>
         <div className="comment__date">
           <p>
-            {this.props.date}
+            {convertDateTime(this.props.date)}
           </p>
         </div>
       </div>

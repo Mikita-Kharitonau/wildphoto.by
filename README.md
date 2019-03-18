@@ -12,7 +12,7 @@ http://wildphoto.by/ - Прямиком с лугов Полесья
     * Не только фотографии, но и видео
     * и т.д.
 * Backend:
-    * Думаю, напишем
+    * Думаю, напишем [In progress](https://github.com/ppomaker/wildphoto-server)
     
 более подробно см. architecture.md
 
@@ -21,7 +21,7 @@ http://wildphoto.by/ - Прямиком с лугов Полесья
  
 ## Progress:
 
-![Images and videos gallery example](photos/current_progress(22.02.2019).jpg)
+![Images and videos gallery example](public/photos/Current_progress(18-03-2019).png)
 
 ## Available Scripts
 
