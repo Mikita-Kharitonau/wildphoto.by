@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './Comment.css'
-import convertDateTime from '../utils';
+import convertDateTime from '../util/utils';
 
 export default class Comment extends Component {
   render() {

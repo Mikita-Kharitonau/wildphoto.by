@@ -32,9 +32,8 @@ export default class Grid extends Component {
         {
           this.props.source.map((item) => {
             return (
-              <div className="grid__item">
+              <div className="grid__item" key={item.id}>
                 <PhotoThumbnail
-                  key={item.id}
                   data={item}
                   onClick={this.handleItemClick} />
               </div>

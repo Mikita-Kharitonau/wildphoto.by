@@ -3,7 +3,7 @@ import './Gallery.css'
 import Grid from '../grid/Grid.js';
 import ReactModal from 'react-modal';
 import Photo from '../photo/Photo';
-import galleryApi from './service';
+import wildphotoApi from '../api.js';
 
 
 ReactModal.setAppElement('#root')
@@ -137,7 +137,7 @@ export default class Gallery extends Component {
     this.setState({
       isGridDataLoading: true
     })
-    galleryApi.getAllPhotos()
+    wildphotoApi.getAllPhotos()
       .then((result) => {
         this.setState({
           isGridDataLoading: false,
@@ -155,7 +155,7 @@ export default class Gallery extends Component {
       isPhotoLoading: true,
       isModalWindowOpen: true
     })
-    galleryApi.getPhotoById(id)
+    wildphotoApi.getPhotoById(id)
       .then(result => {
       this.setState({
         isPhotoLoading: false,

@@ -3,7 +3,7 @@ import './Photo.css';
 import { FaRegHeart, FaHeart, FaTimes, FaThumbsDown, FaRegThumbsDown, FaPlus } from 'react-icons/fa';
 import { SelfBuildingSquareSpinner, FulfillingSquareSpinner } from 'react-epic-spinners';
 import Comment from '../comment/Comment.js';
-import convertDateTime from '../utils';
+import convertDateTime from '../util/utils';
 
 export default class Photo extends Component {
 

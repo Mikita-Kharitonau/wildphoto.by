@@ -72,14 +72,22 @@ class App extends Component {
             }
           ]
         }
-      ]
+      ],
+      currentUser: {
+        id: 123,
+        avatarSrc: "photos/H20SY3wdF7Y.jpg",
+        name: "Никита Харитонов"
+      }
     }
   }
 
   render() {
     return (
       <div className="App">
-        <Header navbarItems={this.headerData.navbarItems}></Header>
+        <Header 
+          navbarItems={this.headerData.navbarItems}
+          isAuthenticated={true}
+          currentUser={this.headerData.currentUser} />
         <Gallery />
       </div>
     );

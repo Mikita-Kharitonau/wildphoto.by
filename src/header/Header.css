@@ -4,7 +4,7 @@
   padding: 0 5px 0 5px;
 }
 
-.navbar__link, .navbar__logo {
+.navbar__logo {
   padding-left: 8px;
   padding-right: 8px;
   color: rgb(33, 33, 33);
@@ -38,6 +38,11 @@
 
 .navbar__items_right {
   margin-left: auto;
+  align-items: center;
+}
+
+.navbar__link {
+  text-decoration: none;
 }
 
 .navbar__toggle {
@@ -58,7 +63,7 @@
     display: none;
   }
   .navbar__items_right {
-    margin-left: 0;
+    margin-left: 5px;
   }
   .navbar__toggleShow {
     display: flex;
