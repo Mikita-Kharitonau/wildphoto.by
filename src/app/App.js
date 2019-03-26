@@ -1,9 +1,15 @@
-import React, { Component } from 'react';
-import Header from '../header/Header.js';
-import Gallery from '../gallery/Gallery.js';
+import React, { Component } from "react";
+import Header from "../header/Header.js";
+import Gallery from "../gallery/Gallery.js";
+import Login from "../login/Login";
+import Signup from "../signup/Signup";
+import ReactModal from "react-modal";
+import "./App.css";
+import { Route, Switch } from "react-router-dom";
+import api from "../api";
+import { ACCESS_TOKEN_KEY } from "../constants";
 
 class App extends Component {
-
   constructor() {
     super();
     this.headerData = {
@@ -72,23 +78,134 @@ class App extends Component {
             }
           ]
         }
-      ],
-      currentUser: {
-        id: 123,
-        avatarSrc: "photos/H20SY3wdF7Y.jpg",
-        name: "Никита Харитонов"
-      }
-    }
+      ]
+    };
+
+    this.state = {
+      isAuthenticated: false,
+      isCurrentUserLoading: false,
+      isLoginModalOpen: false,
+      isSignupModalOpen: false
+    };
+    this.handleCloseLoginModal = this.handleCloseLoginModal.bind(this);
+    this.handleLoginRequest = this.handleLoginRequest.bind(this);
+    this.handleCloseSignupModal = this.handleCloseSignupModal.bind(this);
+    this.handleSignupRequest = this.handleSignupRequest.bind(this);
+    this.handleLogin = this.handleLogin.bind(this);
+    this.handleLogout = this.handleLogout.bind(this);
+    this.loadCurrentUser = this.loadCurrentUser.bind(this);
+  }
+
+  handleCloseLoginModal() {
+    this.setState({
+      isLoginModalOpen: false
+    });
+  }
+
+  handleCloseSignupModal() {
+    this.setState({
+      isSignupModalOpen: false
+    });
+  }
+
+  handleLoginRequest() {
+    this.setState({
+      isLoginModalOpen: true
+    });
+  }
+
+  handleSignupRequest() {
+    this.setState({
+      isLoginModalOpen: false,
+      isSignupModalOpen: true
+    });
+  }
+
+  handleLogin() {
+    this.handleCloseLoginModal();
+    this.loadCurrentUser();
+  }
+
+  handleLogout() {
+    localStorage.removeItem(ACCESS_TOKEN_KEY);
+    this.setState({
+      isAuthenticated: false
+    });
+  }
+
+  loadCurrentUser() {
+    this.setState({
+      isCurrentUserLoading: true
+    });
+    api
+      .getCurrentUser()
+      .then(data => {
+        this.setState({
+          isCurrentUserLoading: false,
+          isAuthenticated: true,
+          currentUser: data
+        });
+      })
+      .catch(error => {
+        console.error(error);
+        this.setState({
+          isCurrentUserLoading: false
+        });
+      });
+  }
+
+  componentDidMount() {
+    this.loadCurrentUser();
   }
 
   render() {
     return (
-      <div className="App">
-        <Header 
+      <div className="App" id="wildphotoApp">
+        <Header
           navbarItems={this.headerData.navbarItems}
-          isAuthenticated={true}
-          currentUser={this.headerData.currentUser} />
-        <Gallery />
+          isAuthenticated={this.state.isAuthenticated}
+          currentUser={this.state.currentUser}
+          onLoginClick={this.handleLoginRequest}
+          onLogout={this.handleLogout}
+        />
+
+        <ReactModal
+          isOpen={this.state.isLoginModalOpen}
+          parentSelector={() => document.getElementById("wildphotoApp")}
+          className="appModal__content loginModal__content"
+          overlayClassName="appModal__overlay"
+          shouldFocusAfterRender={false}
+          shouldCloseOnOverlayClick={true}
+          onRequestClose={this.handleCloseLoginModal}
+        >
+          <Login
+            onCancel={this.handleCloseLoginModal}
+            onLogin={this.handleLogin}
+            onSignupRequest={this.handleSignupRequest}
+          />
+        </ReactModal>
+
+        <ReactModal
+          isOpen={this.state.isSignupModalOpen}
+          parentSelector={() => document.getElementById("wildphotoApp")}
+          className="appModal__content signupModal__content"
+          overlayClassName="appModal__overlay"
+          shouldFocusAfterRender={false}
+          shouldCloseOnOverlayClick={true}
+          onRequestClose={this.handleCloseSignupModal}
+        >
+          <Signup
+            onCancel={this.handleCloseSignupModal}
+            onSignup={this.handleCloseSignupModal}
+          />
+        </ReactModal>
+
+        <Gallery isAuthenticated={this.state.isAuthenticated} />
+        {/* <div className="appWrapper">
+          <Switch>
+            <Route path="/photo" render={props => <Gallery />} />
+          </Switch>
+        </div> */}
       </div>
     );
   }

@@ -1,0 +1,47 @@
+.appModal__content {
+  background-color: white;
+  box-shadow: 4px 4px 7px 0px rgba(0, 0, 0, 0.4);
+  border-radius: 3px;
+}
+
+.loginModal__content {
+  width: 35%;
+}
+
+.signupModal__content {
+  width: 35%;
+}
+
+.appModal__content:focus {
+  outline: 0;
+}
+
+.appModal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+button {
+  font-family: 'Open Sans';
+}
+
+.button-like-link {
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  font: inherit;
+  color: blue;
+  cursor: pointer;
+}
+
+.button-like-link:hover {
+  text-decoration: underline;
+}

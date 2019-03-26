@@ -1,26 +1,10 @@
-.reactModal__content {
+.photoModal__content {
   width: 70%;
   height: 70%;
-  background-color: white;
-  box-shadow: 4px 4px 7px 0px rgba(0, 0, 0, 0.4);
-  border-radius: 3px;
 }
 
-.reactModal__content:focus {
+.photoModal__content:focus {
   outline: 0;
-}
-
-.reactModal__overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 100;
 }
 
 .gallery {

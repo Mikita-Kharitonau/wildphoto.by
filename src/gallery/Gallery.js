@@ -1,15 +1,13 @@
-import React, { Component } from 'react';
-import './Gallery.css'
-import Grid from '../grid/Grid.js';
-import ReactModal from 'react-modal';
-import Photo from '../photo/Photo';
-import wildphotoApi from '../api.js';
+import React, { Component } from "react";
+import "./Gallery.css";
+import Grid from "../grid/Grid.js";
+import ReactModal from "react-modal";
+import Photo from "../photo/Photo";
+import wildphotoApi from "../api.js";
 
-
-ReactModal.setAppElement('#root')
+ReactModal.setAppElement("#root");
 
 export default class Gallery extends Component {
-
   constructor() {
     super();
     this.state = {
@@ -18,7 +16,7 @@ export default class Gallery extends Component {
         comments: []
       },
       gridSource: []
-    }
+    };
     this.gridSource = [
       {
         title: "Черный аист",
@@ -128,7 +126,7 @@ export default class Gallery extends Component {
         likesCount: 80,
         id: 12
       }
-    ]
+    ];
     this.handleItemClick = this.handleItemClick.bind(this);
     this.handleCloseModal = this.handleCloseModal.bind(this);
   }
@@ -136,38 +134,36 @@ export default class Gallery extends Component {
   componentDidMount() {
     this.setState({
       isGridDataLoading: true
-    })
-    wildphotoApi.getAllPhotos()
-      .then((result) => {
-        this.setState({
-          isGridDataLoading: false,
-          gridSource: result
-        })
-      })
+    });
+    wildphotoApi.getAllPhotos().then(result => {
+      this.setState({
+        isGridDataLoading: false,
+        gridSource: result
+      });
+    });
   }
 
   sleep(time) {
-    return new Promise((resolve) => setTimeout(resolve, time));
+    return new Promise(resolve => setTimeout(resolve, time));
   }
 
   handleItemClick(id) {
     this.setState({
       isPhotoLoading: true,
       isModalWindowOpen: true
-    })
-    wildphotoApi.getPhotoById(id)
-      .then(result => {
+    });
+    wildphotoApi.getPhotoById(id).then(result => {
       this.setState({
         isPhotoLoading: false,
         selectedItem: result
-      })
-    })
+      });
+    });
   }
 
   handleCloseModal() {
     this.setState({
       isModalWindowOpen: false
-    })
+    });
   }
 
   render() {
@@ -175,12 +171,13 @@ export default class Gallery extends Component {
       <div className="gallery" id="wildphotoGallery">
         <ReactModal
           isOpen={this.state.isModalWindowOpen}
-          parentSelector={() => document.getElementById('wildphotoGallery')}
-          className="reactModal__content"
-          overlayClassName="reactModal__overlay"
+          parentSelector={() => document.getElementById("wildphotoGallery")}
+          className="appModal__content photoModal__content"
+          overlayClassName="appModal__overlay"
           shouldFocusAfterRender={false}
           shouldCloseOnOverlayClick={true}
-          onRequestClose={this.handleCloseModal}>
+          onRequestClose={this.handleCloseModal}
+        >
           <Photo
             src={this.state.selectedItem.fullsizeSrc}
             title={this.state.selectedItem.title}
@@ -190,13 +187,16 @@ export default class Gallery extends Component {
             likes={this.state.selectedItem.likes}
             dislikes={this.state.selectedItem.dislikes}
             onClose={this.handleCloseModal}
-            isLoading={this.state.isPhotoLoading} />
+            isLoading={this.state.isPhotoLoading}
+            isAuthenticated={this.props.isAuthenticated}
+          />
         </ReactModal>
         <Grid
           source={this.state.gridSource}
           onItemClick={this.handleItemClick}
-          isLoading={this.state.isGridDataLoading} />
+          isLoading={this.state.isGridDataLoading}
+        />
       </div>
-    )
+    );
   }
 }

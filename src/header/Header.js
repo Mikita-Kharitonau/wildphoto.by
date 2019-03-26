@@ -19,8 +19,9 @@ export default class Header extends Component {
 
   renderLogin() {
     return (
-      <a className="navbar__link" href="/login">
-        Войти
+      <a className="navbar__link" onClick={this.props.onLoginClick}>
+        <p>Войти</p>
+        <FaSignInAlt className="navbar__link_icon" />
       </a>
     )
   }
@@ -32,12 +33,16 @@ export default class Header extends Component {
         text: "Профиль"
       },
       {
-        href: "/logout",
-        text: "Выйти"
+        href: "",
+        text: "Выйти",
+        onClick: () => {
+          this.props.onLogout();
+        }
       },
     ]
     return (
-      <HeaderDropdown 
+      <HeaderDropdown
+        headerAvatarSrc={this.props.currentUser.avatarSrc}
         headerText={this.props.currentUser.name}
         menuItems={menuItems} />
     )
@@ -69,7 +74,9 @@ export default class Header extends Component {
           </ul>
         </nav>
         <nav className="navbar__items navbar__items_right">
+          <div className="userArea">
             {userArea}
+          </div>
         </nav>
       </div>
     )

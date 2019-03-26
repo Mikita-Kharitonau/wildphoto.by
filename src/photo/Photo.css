@@ -108,7 +108,7 @@
 
  .pleaseLogin {
    grid-area: 3 / 2 / 5 / 3;
-   display: none;
+   display: flex;
    justify-content: center;
    align-items: center;
    padding: 5px;
@@ -117,6 +117,7 @@
  .pleaseLogin p {
    margin: 0;
    font-size: 0.9rem;
+   color: gray;
    text-align: center;
  }
 

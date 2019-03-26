@@ -38,6 +38,17 @@
   display: block;
 }
 
+.dropdown__header_avatar {
+  display: flex;
+  margin-right: 5px;
+}
+
+.dropdown__header_avatar img {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+}
+
 .dropdown__header_text {
   margin: 0;
 }
@@ -51,10 +62,12 @@
 .dropdown__menu a {
   text-decoration: none;
   color: black;
+  display: block;
+  padding: 5px;
+  box-sizing: border-box;
 }
 
 .dropdown__menu_item {
-  padding: 5px;
   border-radius: 3px;
 }
 

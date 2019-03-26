@@ -1,0 +1,41 @@
+.c-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-login h3 {
+  text-align: center;
+}
+
+.c-login__form {
+  width: 70%;
+  text-align: center;
+}
+
+.wildphotoForm__btn {
+  border: none;
+  padding: 10px 30px;
+  margin: 0 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.wildphotoForm__btn_submit {
+  background-color: rgb(75, 182, 79);
+  color: white;
+}
+
+.wildphotoForm__errorArea {
+  color: crimson;
+  font-size: 0.8rem;
+}
+
+.wildphotoForm__signup {
+  font-size: 0.8rem;
+}
+
+.wildphotoForm__btnArea {
+  margin: 20px 0;
+}
