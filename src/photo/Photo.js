@@ -8,12 +8,9 @@ import {
   FaRegThumbsDown,
   FaPlus
 } from "react-icons/fa";
-import {
-  SelfBuildingSquareSpinner,
-  FulfillingSquareSpinner
-} from "react-epic-spinners";
+import { FulfillingSquareSpinner } from "react-epic-spinners";
 import Comment from "../comment/Comment.js";
-import convertDateTime from "../util/utils";
+import { convertDateTime } from "../utils";
 import { ACTIONS_RESTRICTION } from "../constants";
 
 export default class Photo extends Component {
@@ -113,6 +110,14 @@ export default class Photo extends Component {
       );
     }
 
+    if (this.props.isError) {
+      return (
+        <div className="photo__errorArea">
+          <p>{this.props.errorMsg}</p>
+        </div>
+      );
+    }
+
     return (
       <div className="photo">
         <div className="photo__header">
@@ -129,38 +134,29 @@ export default class Photo extends Component {
           </div>
         </div>
         <div className="imageWrapper">
-          <img className="photo__img" src={this.props.src} />
+          <img className="photo__img" src={this.props.src} alt={"Photo by " + this.props.author} />
         </div>
         <div className="comments">{comments}</div>
-        {!this.props.isAuthenticated && (
-          <div className="pleaseLogin">
-            <p>{ACTIONS_RESTRICTION}</p>
+        <div className="actions">
+          <div className="action">
+            {like}
+            <span>{this.props.likes.length}</span>
           </div>
-        )}
-        {this.props.isAuthenticated && (
-          <div className="actions">
-            <div className="action">
-              {like}
-              <span>{this.props.likes.length}</span>
-            </div>
-            <div className="action">
-              {dislike}
-              <span>{this.props.dislikes.length}</span>
-            </div>
+          <div className="action">
+            {dislike}
+            <span>{this.props.dislikes.length}</span>
           </div>
-        )}
-        {this.props.isAuthenticated && (
-          <div className="addComment">
-            <div className="addComment__input">
-              <input type="text" placeholder="Добавьте комментарий..." />
-            </div>
-            <div className="addComment__submit">
-              <button onClick={this.handleCommentSubmit}>
-                <FaPlus />
-              </button>
-            </div>
+        </div>
+        <div className="addComment">
+          <div className="addComment__input">
+            <input type="text" placeholder="Добавьте комментарий..." />
           </div>
-        )}
+          <div className="addComment__submit">
+            <button onClick={this.handleCommentSubmit}>
+              <FaPlus />
+            </button>
+          </div>
+        </div>
       </div>
     );
   }

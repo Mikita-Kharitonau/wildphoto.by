@@ -10,7 +10,7 @@ export default class HeaderDropdown extends Component {
           {
             this.props.headerAvatarSrc &&
             <div className="dropdown__header_avatar">
-              <img src={this.props.headerAvatarSrc} />
+              <img src={this.props.headerAvatarSrc} alt="Avatar"/>
             </div>
           }
           <p className="dropdown__header_text">{this.props.headerText}</p>

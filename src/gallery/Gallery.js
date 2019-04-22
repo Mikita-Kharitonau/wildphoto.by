@@ -4,6 +4,7 @@ import Grid from "../grid/Grid.js";
 import ReactModal from "react-modal";
 import Photo from "../photo/Photo";
 import wildphotoApi from "../api.js";
+import { getCurrentScreenWidth } from "../utils";
 
 ReactModal.setAppElement("#root");
 
@@ -128,7 +129,7 @@ export default class Gallery extends Component {
       }
     ];
     this.handleItemClick = this.handleItemClick.bind(this);
-    this.handleCloseModal = this.handleCloseModal.bind(this);
+    this.handleClosePhoto = this.handleClosePhoto.bind(this);
   }
 
   componentDidMount() {
@@ -143,30 +144,54 @@ export default class Gallery extends Component {
     });
   }
 
-  sleep(time) {
-    return new Promise(resolve => setTimeout(resolve, time));
-  }
-
   handleItemClick(id) {
+    const isModalWindowOpen = getCurrentScreenWidth() > 800 ? true : false;
     this.setState({
       isPhotoLoading: true,
-      isModalWindowOpen: true
+      isModalWindowOpen: isModalWindowOpen,
+      shouldPhotoRender: !isModalWindowOpen
     });
     wildphotoApi.getPhotoById(id).then(result => {
       this.setState({
+        isPhotoHasError: false,
+        photoErrorMsg: undefined,
         isPhotoLoading: false,
         selectedItem: result
       });
+    }).catch(err => {
+      this.setState({
+        isPhotoLoading: false,
+        isPhotoHasError: true,
+        photoErrorMsg: err
+      })
     });
   }
 
-  handleCloseModal() {
+  handleClosePhoto() {
     this.setState({
+      shouldPhotoRender: false,
       isModalWindowOpen: false
     });
   }
 
   render() {
+    const photo = (
+      <Photo
+        src={this.state.selectedItem.fullsizeSrc}
+        title={this.state.selectedItem.title}
+        date={this.state.selectedItem.date}
+        author={this.state.selectedItem.author}
+        comments={this.state.selectedItem.comments}
+        likes={this.state.selectedItem.likes}
+        dislikes={this.state.selectedItem.dislikes}
+        onClose={this.handleClosePhoto}
+        isLoading={this.state.isPhotoLoading}
+        isError={this.state.isPhotoHasError}
+        errorMsg={this.state.photoErrorMsg}
+        isAuthenticated={this.props.isAuthenticated}
+      />
+    );
+
     return (
       <div className="gallery" id="wildphotoGallery">
         <ReactModal
@@ -176,26 +201,21 @@ export default class Gallery extends Component {
           overlayClassName="appModal__overlay"
           shouldFocusAfterRender={false}
           shouldCloseOnOverlayClick={true}
-          onRequestClose={this.handleCloseModal}
+          onRequestClose={this.handleClosePhoto}
         >
-          <Photo
-            src={this.state.selectedItem.fullsizeSrc}
-            title={this.state.selectedItem.title}
-            date={this.state.selectedItem.date}
-            author={this.state.selectedItem.author}
-            comments={this.state.selectedItem.comments}
-            likes={this.state.selectedItem.likes}
-            dislikes={this.state.selectedItem.dislikes}
-            onClose={this.handleCloseModal}
-            isLoading={this.state.isPhotoLoading}
-            isAuthenticated={this.props.isAuthenticated}
-          />
+          {photo}
         </ReactModal>
-        <Grid
-          source={this.state.gridSource}
-          onItemClick={this.handleItemClick}
-          isLoading={this.state.isGridDataLoading}
-        />
+
+        {this.state.shouldPhotoRender && 
+          <div>{ photo }</div>}
+
+        {!this.state.shouldPhotoRender && (
+          <Grid
+            source={this.state.gridSource}
+            onItemClick={this.handleItemClick}
+            isLoading={this.state.isGridDataLoading}
+          />
+        )}
       </div>
     );
   }

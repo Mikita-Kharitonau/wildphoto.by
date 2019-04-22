@@ -1,19 +1,25 @@
-.c-login {
+.c-form {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.c-login h3 {
+.appForm__title {
   text-align: center;
 }
 
-.c-login__form {
-  width: 70%;
+.c-form__form {
+  width: 80%;
   text-align: center;
 }
 
-.wildphotoForm__btn {
+@media only screen and (max-width: 600px) {
+  .c-form__form {
+    width: 95%;
+  }
+}
+
+.appForm__btn {
   border: none;
   padding: 10px 30px;
   margin: 0 10px;
@@ -22,20 +28,20 @@
   display: inline-block;
 }
 
-.wildphotoForm__btn_submit {
+.appForm__btn_submit {
   background-color: rgb(75, 182, 79);
   color: white;
 }
 
-.wildphotoForm__errorArea {
+.appForm__errorArea {
   color: crimson;
   font-size: 0.8rem;
 }
 
-.wildphotoForm__signup {
+.appForm__signup {
   font-size: 0.8rem;
 }
 
-.wildphotoForm__btnArea {
+.appForm__btnArea {
   margin: 20px 0;
 }

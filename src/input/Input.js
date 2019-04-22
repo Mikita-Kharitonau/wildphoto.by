@@ -15,6 +15,8 @@ export default class Input extends Component {
         return <FaLock />;
       case "emailOrLogin":
         return <FaUser />;
+      default:
+        return <div />;
     }
   }
 

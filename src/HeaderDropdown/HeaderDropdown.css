@@ -8,7 +8,7 @@
   align-items: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
   .dropdown__menu {
     position: absolute;
   }
@@ -74,4 +74,10 @@
 .dropdown__menu_item:hover {
   background-color: #efefef;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .dropdown {
+    margin: 10px 0;
+  }
 }

@@ -6,7 +6,9 @@ const wildphotoApi = {
   },
 
   getPhotoById: id => {
-    return fetch(apiBasePath + "/photo/" + id).then(res => res.json());
+    return fetch(apiBasePath + "/photo/" + id).then(res => res.json()).catch(err => {
+      return new Promise((res, rej) => rej("Network error :("))
+    });
   },
 
   login: loginRequest => {
@@ -19,7 +21,7 @@ const wildphotoApi = {
         throw response;
       }
       return response.json();
-    });
+    })
   },
 
   signup: signupRequest => {

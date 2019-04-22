@@ -55,12 +55,12 @@ export default class Signup extends Component {
 
   render() {
     return (
-      <div className="c-login">
+      <div className="c-form">
         <form
-          className="c-login__form wildphotoForm"
+          className="c-form__form appForm"
           onSubmit={this.handleFormSubmit}
         >
-          <h3>Регистрация</h3>
+          <h3 className="appForm__title">Регистрация</h3>
           <Input
             type="email"
             iconType="emailOrLogin"
@@ -86,17 +86,17 @@ export default class Signup extends Component {
             onChange={this.handleChange}
           />
           {this.state.isError && (
-            <p className="wildphotoForm__errorArea">{this.state.errorMsg}</p>
+            <p className="appForm__errorArea">{this.state.errorMsg}</p>
           )}
-          <div className="wildphotoForm__btnArea">
+          <div className="appForm__btnArea">
             <button
-              className="wildphotoForm__btn"
+              className="appForm__btn"
               onClick={this.props.onCancel}
             >
               Отмена
             </button>
             <button
-              className="wildphotoForm__btn wildphotoForm__btn_submit"
+              className="appForm__btn appForm__btn_submit"
               type="submit"
             >
               Регистрация

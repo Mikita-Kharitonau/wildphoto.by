@@ -1,4 +1,4 @@
-export const apiBasePath = "http://192.168.0.107:8080/api";
+export const apiBasePath = "http://localhost:8080/api";
 export const ACCESS_TOKEN_KEY = "wildphotoAccessToken";
 export const BAD_CREDENTIALS = "Неверный e-mail/логин или пароль";
 export const NOT_REGISTER_YET = "Еще не зарегистрированы?";

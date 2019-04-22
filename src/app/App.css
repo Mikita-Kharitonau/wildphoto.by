@@ -4,12 +4,31 @@
   border-radius: 3px;
 }
 
-.loginModal__content {
-  width: 35%;
+@media only screen and (min-width: 800px) {
+  .loginModal__content {
+    width: 35%;
+  }
+  .signupModal__content {
+    width: 35%;
+  }
 }
 
-.signupModal__content {
-  width: 35%;
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+  .loginModal__content {
+    width: 70%;
+  }
+  .signupModal__content {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .loginModal__content {
+    width: 90%;
+  }
+  .signupModal__content {
+    width: 90%;
+  }
 }
 
 .appModal__content:focus {
@@ -30,6 +49,10 @@
 }
 
 button {
+  font-family: 'Open Sans';
+}
+
+input {
   font-family: 'Open Sans';
 }
 

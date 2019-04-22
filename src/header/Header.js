@@ -1,13 +1,12 @@
-import React, { Component } from 'react'
-import './Header.css'
-import HeaderDropdown from '../HeaderDropdown/HeaderDropdown.js';
-import { FaBars, FaSignInAlt } from 'react-icons/fa';
+import React, { Component } from "react";
+import "./Header.css";
+import HeaderDropdown from "../HeaderDropdown/HeaderDropdown.js";
+import { FaBars, FaSignInAlt } from "react-icons/fa";
 
 export default class Header extends Component {
-
   handleToggleClick() {
-    const navs = document.querySelectorAll('.navbar__items');
-    navs.forEach(nav => nav.classList.toggle('navbar__toggleShow'));
+    const navs = document.querySelectorAll(".navbar__items");
+    navs.forEach(nav => nav.classList.toggle("navbar__toggleShow"));
   }
 
   constructor() {
@@ -23,7 +22,7 @@ export default class Header extends Component {
         <p>Войти</p>
         <FaSignInAlt className="navbar__link_icon" />
       </a>
-    )
+    );
   }
 
   renderUsersDropdown() {
@@ -38,25 +37,32 @@ export default class Header extends Component {
         onClick: () => {
           this.props.onLogout();
         }
-      },
-    ]
+      }
+    ];
     return (
       <HeaderDropdown
         headerAvatarSrc={this.props.currentUser.avatarSrc}
         headerText={this.props.currentUser.name}
-        menuItems={menuItems} />
-    )
+        menuItems={menuItems}
+      />
+    );
   }
 
   render() {
-    const userArea = this.props.isAuthenticated ? this.renderUsersDropdown() : this.renderLogin();
+    const userArea = this.props.isAuthenticated
+      ? this.renderUsersDropdown()
+      : this.renderLogin();
 
     return (
       <div className="navbar">
-        <a className="nodecor" href="/home">
-          <div className="navbar__logo">
-            <img className="navbar__logo_img" src="/wildphoto_logo.png" alt="" />
-            <p className="navbar__logo_text">Wildphoto</p>
+        <a className="logo_wrapper" href="/">
+          <div className="logo">
+            <img
+              className="logo_img"
+              src="/wildphoto_logo.png"
+              alt=""
+            />
+            <p className="logo_text">Wildphoto</p>
           </div>
         </a>
         <div className="navbar__toggle">
@@ -65,20 +71,20 @@ export default class Header extends Component {
         <nav className="navbar__items">
           <ul className="navbar__items_links">
             {this.props.navbarItems.map((value, index) => {
-              return <HeaderDropdown
-                key={index}
-                headerText={value.headerText}
-                menuItems={value.menuItems}
-              />
+              return (
+                <HeaderDropdown
+                  key={index}
+                  headerText={value.headerText}
+                  menuItems={value.menuItems}
+                />
+              );
             })}
           </ul>
         </nav>
         <nav className="navbar__items navbar__items_right">
-          <div className="userArea">
-            {userArea}
-          </div>
+          <div className="userArea">{userArea}</div>
         </nav>
       </div>
-    )
+    );
   }
 }
