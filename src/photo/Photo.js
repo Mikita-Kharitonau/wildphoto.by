@@ -78,6 +78,7 @@ export default class Photo extends Component {
           author={comment.author}
           text={comment.text}
           date={comment.date}
+          key={comment.id}
         />
       );
     });

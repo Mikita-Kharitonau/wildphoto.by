@@ -1,7 +1,14 @@
-const cacheVersion = "v1";
+const cacheVersion = "v3";
 
 self.addEventListener("install", function(event) {
   console.log("Service Worker: Installing");
+  // event.waitUntil(
+  //   caches.open('v2').then(function(cache) {
+  //     return cache.addAll([
+  //       'index.html'
+  //     ]);
+  //   })
+  // );
 });
 
 self.addEventListener("activate", event => {
@@ -25,7 +32,6 @@ self.addEventListener("fetch", function(event) {
   event.respondWith(
     fetch(event.request)
       .then(res => {
-        console.log('Getting result in sw')
         const resClone = res.clone();
         caches.open(cacheVersion).then(cache => {
           cache.put(event.request, resClone);
