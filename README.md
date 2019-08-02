@@ -12,16 +12,31 @@ http://wildphoto.by/ - Прямиком с лугов Полесья
     * Не только фотографии, но и видео
     * и т.д.
 * Backend:
-    * Думаю, напишем [In progress](https://github.com/ppomaker/wildphoto-server)
-    
-более подробно см. architecture.md
-
-## Stage:
- * developing architecture (architecture.md)
+    * Думаю, напишем, [In progress](https://github.com/Mikita-Kharitonau/wildphoto-server)
  
 ## Progress:
 
-![Images and videos gallery example](public/photos/Current_progress(18-03-2019).png)
+![Example](public/photos/readme/Screenshot6.png)
+
+![Example](public/photos/readme/Screenshot7.png)
+
+![Example](public/photos/readme/Screenshot1.png)
+
+![Example](public/photos/readme/Screenshot3.png)
+
+![Example](public/photos/readme/Screenshot2.png)
+
+![Example](public/photos/readme/Screenshot4.png)
+
+![Example](public/photos/readme/Screenshot5.png)
+
+## How to run?
+```
+$ git clone https://github.com/Mikita-Kharitonau/wildphoto.by.git
+$ cd wildphoto.by
+$ npm install
+$ npm start
+```
 
 ## Available Scripts
 
